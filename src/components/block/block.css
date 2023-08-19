@@ -1,0 +1,33 @@
+img{
+    /* background-color: red; */
+    height: 15px;
+    width: 15px;
+}
+
+.prnt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: -30px;
+}
+
+.f{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    /* background-color: burlywood; */
+    height: fit-content;
+}
+.s{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 7px;
+        align-items: center;
+        /* background-color: burlywood; */
+        height: fit-content;
+}
