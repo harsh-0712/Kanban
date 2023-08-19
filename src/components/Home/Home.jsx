@@ -41,7 +41,7 @@ function Home() {
 
   return (
         <div className='container'>
-          <div><Topbar setProperty={setProperty} setOrder={setOrder} /></div>
+          <div><Topbar setProperty={setProperty} setOrder={setOrder}/></div>
           <div className='collection'>
               {
                 list.length &&

@@ -32,7 +32,7 @@ function List({list,property}) {
         <div>
             <div className='list'>
 
-                <Block content={list[0][p]} p={p} len={list.length} />
+                <Block content={list[0][p]} p={p} no={list[0].priority} len={list.length} />
                 {
                     list.map((item)=>{
                         return <Section obj={item}/>

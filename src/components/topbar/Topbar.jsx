@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import './topbar.css'
+
+
+
 
 function Topbar({setProperty,setOrder}) {
     const options = [
@@ -11,15 +14,28 @@ function Topbar({setProperty,setOrder}) {
     const options2 = [
         'Priority', 'Name'
     ]
-
+    
     const [grp,setGrp]=useState(options[0])
     const [ord,setOrd]=useState(options2[0])
+    // const [cl,setCl]=useState('')
 
     const [dp,setDp]=useState(false)
-
     const show=()=>{
         setDp((d)=>!d)
     }
+
+    // const handleOutsideClick=()=>{
+    //     setCl('myMenuClassName')
+    // }
+
+    // useEffect(() => {
+    //     window.addEventListener('click', handleOutsideClick);
+    //     return () => {
+    //         window.removeEventListener('click', handleOutsideClick);
+    //     };
+    // }, []);
+
+ 
 
   return (
     <div>
@@ -32,12 +48,13 @@ function Topbar({setProperty,setOrder}) {
             <div className='upper'>
                 <div className='ft'>
                     <div><p>Grouping</p></div>
-                      <div>
+                        <div>
                           <Dropdown
                               className='drop'
                               options={options}
                               onChange={(e) => {setProperty(e.value.toLowerCase()); setGrp(e)}}
                               value={grp}
+                              
                           />
                       </div>
                 </div>

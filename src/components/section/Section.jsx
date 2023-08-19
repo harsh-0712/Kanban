@@ -12,7 +12,7 @@ function Section({obj}) {
             <Image name={obj.name}/>
         </div>
         <div className='mid'>
-              <h4><input type='checkbox'></input>{obj.priority} {  obj.title}</h4>
+              <input type='checkbox'></input><h4>{obj.title}</h4>
         </div>
         <div className='bottom'>
             {
